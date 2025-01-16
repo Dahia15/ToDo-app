@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRCafe To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main>
+        <img class="vrimg" src="img/logo.webp" alt="VRCafe Haarlem Logo">   
+        <section class="add-task">
+            
+            <input class="text-input" type="text" id="task-input" placeholder="Voeg een taak toe...">
+            <select id="category-select">
+                <option value="Werk">Werk</option>
+                <option value="Persoonlijk">Persoonlijk</option>
+                <option value="Vrije tijd">Vrije tijd</option>
+            </select>
+            <button id="add-task-btn">Voeg Toe</button>
+        </section>
+
+        <section class="task-list">
+            <h2>Taken</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">Alle</button>
+                <button class="filter-btn" data-category="Werk">Werk</button>
+                <button class="filter-btn" data-category="Persoonlijk">Persoonlijk</button>
+                <button class="filter-btn" data-category="Vrije tijd">Vrije tijd</button>
+            </div>
+            <ul id="tasks"></ul>
+        </section>
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
